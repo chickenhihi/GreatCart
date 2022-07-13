@@ -2,8 +2,6 @@ from django.db import models
 from accounts.models import Account
 from store.models import Product, Variation
 
-# Create your models here.
-
 
 class Payment(models.Model):
     user = models.ForeignKey(Account, on_delete=models.CASCADE)
